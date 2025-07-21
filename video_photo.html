@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Elements Example</title>
+</head>
+<body>
+
+  <h1>Media Tags in HTML</h1>
+
+  <!-- Image with caption -->
+  <figure>
+    <img src="photo.jpg" alt="Beautiful scenery" width="400">
+    <figcaption>A beautiful landscape view.</figcaption>
+  </figure>
+
+  <!-- Video with multiple sources and captions -->
+  <h2>Sample Video</h2>
+  <video width="600" controls>
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    <track src="captions.vtt" kind="subtitles" srclang="en" label="English">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Audio player -->
+  <h2>Sample Audio</h2>
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+</html>
