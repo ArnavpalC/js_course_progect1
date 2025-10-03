@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+    }
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+      grid-template-rows: auto auto 1fr auto;
+      height: 100vh;
+      gap: 10px;
+      padding: 10px;
+    }
+    header {
+      grid-area: header;
+      background-color: #cbbce3;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      color: lightblue;
+    }
+    nav {
+      grid-area: nav;
+      background-color: #f2872e;
+      text-align: center;
+      padding: 10px;
+      color: lightblue;
+      font-size: 18px;
+    }
+    main {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 10px;
+    }
+    .sidebar {
+      background-color: #b4e434;
+      padding: 20px;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+    }
+    .content {
+      background-color: #00aef0;
+      padding: 20px;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+    }
+    footer {
+      grid-area: footer;
+      background-color: #cbbce3;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+      color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>🍽️ Welcome to Our Restaurant!</header>
+    <nav>
+      <a href="#" style="color: lightblue; text-decoration: none; margin: 0 15px;">Home</a>
+      <a href="#" style="color: lightblue; text-decoration: none; margin: 0 15px;">Menu</a>
+      <a href="#" style="color: lightblue; text-decoration: none; margin: 0 15px;">Order</a>
+      <a href="#" style="color: lightblue; text-decoration: none; margin: 0 15px;">Contact</a>
+    </nav>
+    <main>
+      <div class="sidebar">
+         Popular Items<br><br>
+        - Cheeseburger<br>
+        - Veggie Pizza<br>
+        - Grilled Chicken<br>
+        - Pasta Alfredo
+      </div>
+      <div class="content">
+        Welcome to our restaurant app.<br>
+        <strong>What would you like to order?</strong><br><br>
+        Browse through our delicious menu and place your order with just a few clicks!
+      </div>
+    </main>
+    <footer>© 2025 Restaurant App. All rights reserved.</footer>
+  </div>
+</body>
+</html>
