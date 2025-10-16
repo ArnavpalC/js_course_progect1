@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f2f4f8;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #005f73;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.summary-item {
+  flex: 1;
+  min-width: 200px;
+  background-color: #e9ecef;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.summary-item h2 {
+  margin-bottom: 10px;
+}
+
+.summary-item.credit {
+  border-left: 5px solid #28a745;
+}
+
+.summary-item.debit {
+  border-left: 5px solid #dc3545;
+}
+
+.summary-item.balance {
+  border-left: 5px solid #007bff;
+}
+
+.transactions {
+  margin-top: 20px;
+}
+
+.transactions h2 {
+  margin-bottom: 15px;
+  color: #343a40;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #dee2e6;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+tr.credit td {
+  color: #28a745;
+  font-weight: 500;
+}
+
+tr.debit td {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .summary {
+    flex-direction: column;
+  }
+}

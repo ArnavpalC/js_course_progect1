@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Bank Tracker</title>
+  <link rel="stylesheet" href="a22style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Bank Statement Display</h1>
+    
+    <div class="summary">
+      <div class="summary-item credit">
+        <h2>Total Credit</h2>
+        <p>$4,500.00</p>
+      </div>
+      <div class="summary-item debit">
+        <h2>Total Debit</h2>
+        <p>$2,200.00</p>
+      </div>
+      <div class="summary-item balance">
+        <h2>Balance</h2>
+        <p>$2,300.00</p>
+      </div>
+    </div>
+
+    <div class="transactions">
+      <h2>Transaction History</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="credit">
+            <td>2025-10-01</td>
+            <td>Salary</td>
+            <td>Credit</td>
+            <td>$3,000.00</td>
+          </tr>
+          <tr class="debit">
+            <td>2025-10-03</td>
+            <td>Grocery</td>
+            <td>Debit</td>
+            <td>$200.00</td>
+          </tr>
+          <tr class="credit">
+            <td>2025-10-05</td>
+            <td>Freelance Work</td>
+            <td>Credit</td>
+            <td>$1,500.00</td>
+          </tr>
+          <tr class="debit">
+            <td>2025-10-06</td>
+            <td>Utility Bill</td>
+            <td>Debit</td>
+            <td>$300.00</td>
+          </tr>
+          <tr class="debit">
+            <td>2025-10-10</td>
+            <td>Shopping</td>
+            <td>Debit</td>
+            <td>$1,700.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
