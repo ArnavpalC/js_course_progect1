@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* From first image */
+.text1 {
+  color: red;
+  text-decoration: overline;
+}
+
+.text2 {
+  color: #71ffb0;
+  text-decoration: line-through;
+}
+
+.text3 {
+  color: rgb(70, 98, 120);
+  text-decoration: underline;
+}
+
+.text4 {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: underline overline;
+}
+
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Bank App specific styles */
+.bank-container {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 20px 40px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+input {
+  margin: 10px;
+  padding: 5px;
+  width: 180px;
+}
+
+button {
+  background-color: #3a3f45;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #565b61;
+}

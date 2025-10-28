@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank App</title>
+  <link rel="stylesheet" href="a24.css" />
+</head>
+<body>
+
+  <h2 class="text1">Bank App</h2>
+
+  <div class="bank-container">
+    <label class="text3" for="amount">Enter Transaction Amount</label>
+    <input type="number" id="amount" placeholder="Enter amount" />
+
+    <div class="buttons">
+      <button id="creditBtn" class="p1">Credit</button>
+      <button id="debitBtn" class="p2">Debit</button>
+    </div>
+
+    <p id="balance" class="text4">Your Account Balance is : Rs.0</p>
+  </div>
+
+  <script>
+    let balance = 0;
+    const balanceDisplay = document.getElementById("balance");
+
+    document.getElementById("creditBtn").addEventListener("click", () => {
+      const amount = parseFloat(document.getElementById("amount").value);
+      if (!isNaN(amount) && amount > 0) {
+        balance += amount;
+        balanceDisplay.textContent = `Your Account Balance is : Rs.${balance}`;
+      }
+    });
+
+    document.getElementById("debitBtn").addEventListener("click", () => {
+      const amount = parseFloat(document.getElementById("amount").value);
+      if (!isNaN(amount) && amount > 0 && balance >= amount) {
+        balance -= amount;
+        balanceDisplay.textContent = `Your Account Balance is : Rs.${balance}`;
+      }
+    });
+  </script>
+
+</body>
+</html>
